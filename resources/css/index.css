@@ -1,0 +1,229 @@
+/* EL GENERAL */
+
+html {
+  font-size: 18px;
+  font-family: helvetica;
+  text-decoration: none;
+  color: white;
+}
+
+div {
+  width: 100%;
+}
+
+/* EL HEADER */
+
+header {
+  width: 100%;
+  background-color: #222222;
+  color: white;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo img {
+  height: 1.5rem;
+  margin: 0.66rem 1rem 0.66rem 0.5rem;
+}
+
+.centrado {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*        EL BODY           */
+
+#welcome {
+  background-image: url('../image/main.jpeg');
+  height: 25rem;
+  background-size: cover;
+  background-position: bottom;
+  font-weight: bold;
+  color: white;
+}
+
+#announcements {
+  width: 20rem;
+  background-color: #222222;
+  position: relative;
+  top: 9rem;
+  opacity: 0.8;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 0 3rem 2rem 3rem;
+}
+
+#announcements p {
+  padding: 2rem 0 0.5rem 3rem;
+}
+
+/* NAVIGATION BAR */
+
+#navibar {
+  background-color: firebrick;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navibar .navib {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ITEMS FOR SALE */
+
+.imagen {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #222222;
+  width: 30%;
+}
+
+.imagen img {
+  width: 9rem;
+  height: 9rem;
+  margin: 2rem auto;
+}
+
+#imagenes {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  background-color: #222222;
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+}
+
+/* WHERE TO BUY */
+
+#where {
+  margin-top: 3rem;
+}
+
+.black {
+  background-color: #222222;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.wherewhen {
+  width: 35%;
+}
+
+.black p {
+  margin: 0 2rem;
+}
+
+.wherewhen .blakie {
+  color: black;
+  display: inline-block;
+}
+
+.wheres {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTAAH!! */
+
+footer {
+  margin-top: 4rem;
+  height: 5rem;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+}
+
+#menutab {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* 1024px */
+
+@media only screen and (max-width: 1024px) {
+  .glass {
+    display: none;
+  }
+  .imagen {
+    width: 47%;
+  }
+  .navib span {
+    display: none;
+  }
+  #menutab {
+    display: inline-block;
+  }
+  .centrado {
+    width: 100%;
+  }
+}
+
+/* 470px */
+
+@media only screen and (max-width: 470px) {
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+  .titulo span {
+    display: none;
+  }
+  #welcome {
+    height: 15rem;
+  }
+  #announcements h3 {
+    font-size: 1rem;
+    padding: 0 0 1rem 2rem;
+  }
+  #announcements p {
+    font-size: 0.77rem;
+    padding: 1rem 0 0 2rem;
+  }
+  #announcements {
+    width: 100%;
+    top: 10rem;
+  }
+  .watch {
+    display: none;
+  }
+  .imagen {
+    width: 90%;
+  }
+  #imagenes {
+    justify-content: center;
+  }
+  .wheres {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wherewhen {
+    width: 90%;
+  }
+  .blakie {
+    margin-bottom: 0.5rem;
+  }
+  footer .centrado {
+    justify-content: center;
+  }
+}

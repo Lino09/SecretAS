@@ -161,7 +161,7 @@ footer {
 
 /* 1024px */
 
-@media only screen and (max-width: 1024px) and (min-width: 471px){
+@media only screen and (max-width: 1024px) and (min-width: 480px) {
   .glass {
     display: none;
   }
@@ -179,9 +179,9 @@ footer {
   }
 }
 
-/* 470px */
+/* 480px */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1024px) and (max-width: 480px){
   .titulo {
     display: flex;
     justify-content: center;
@@ -228,9 +228,6 @@ footer {
   }
   .glass {
     display: none;
-  }
-  .imagen {
-    width: 47%;
   }
   .navib span {
     display: none;

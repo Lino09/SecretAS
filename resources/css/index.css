@@ -181,7 +181,7 @@ footer {
 
 /* 470px */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 550px) {
   .titulo {
     display: flex;
     justify-content: center;
